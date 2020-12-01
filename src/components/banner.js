@@ -10,7 +10,9 @@ const Banner = () => {
       <div className="container">
         <div className="row">
           <div className="main-text" draggable="false">
-            Welcome to<br/>Black Frog Studios
+            Welcome to
+            <br />
+            Black Frog Studios
           </div>
           <div className="main-image">
             <img className="main-image" src={Logo} alt="" draggable="false" />
