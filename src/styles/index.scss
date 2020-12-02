@@ -2,7 +2,7 @@
 
 html {
     background: linear-gradient(45deg,#2e2a29,#4a3f35,#fa7d09, #ff4301);
-    animation: gradient 30s ease-in-out infinite;
+    animation: gradient 30s ease infinite;
     animation-direction: alternate;
     background-size: 600% 100%;
 }
@@ -116,6 +116,12 @@ header {
         }
     }
     .main-image {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         width: 536px;
         margin: 0 auto;
         @media(max-width: 1440px) {
