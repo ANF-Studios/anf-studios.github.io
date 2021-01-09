@@ -31,4 +31,6 @@ p {
 
 #bottom-layer {
   font-size: small;
+  text-align: center;
+  mix-blend-mode: darken;
 }
