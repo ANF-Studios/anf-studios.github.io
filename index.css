@@ -9,11 +9,25 @@ p {
   color: #08080a;
 }
 
+.description {
+  font-size: x-large;
+  color: #ebe7e7;
+  padding: 10% 5%;
   justify-content: center;
 }
 
+.glass {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
   text-align: center;
+  margin: auto;
+  margin-top: 75px;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10%;
 }
 
+#bottom-layer {
+  font-size: small;
 }
