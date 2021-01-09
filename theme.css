@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-size: 28px;
+  background-color: #fcfcfc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* #region Navbar*/
+#navbar {
+  justify-content: center;
+  padding: 1%;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5%;
+  width: 42px;
+  height: 42x;
+  position: relative;
+}
+
+#navbar-right {
+  float: right;
+  top: 10%;
+  right: 30%;
+  position: relative;
+}
+
+#navbar-left {
+  float: left;
+  top: 10%;
+  left: 30%;
+  position: relative;
+}
+
+#navbar-right a,
+#navbar-left a {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 17px;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  border-radius: 10px 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: orange;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: orange;
+  color: white;
+}
+
+.content {
+  padding: 32px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/* #endregion */
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 0px;
+}
