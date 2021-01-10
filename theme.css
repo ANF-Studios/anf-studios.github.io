@@ -1,3 +1,5 @@
+@import './assets/Roboto-Light.ttf';
+
 body {
   margin: 0;
   font-size: 28px;
@@ -99,16 +101,6 @@ a {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
-#bottom-layer, #bottom-layer p {
-  font-size: small;
-  text-align: center;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
-  color: #fcfcfc;
-}
-
 
 @media screen and (max-width: 1345px) {
   #bottom-layer p {

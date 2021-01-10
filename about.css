@@ -1,8 +1,9 @@
 @import './theme.css';
-@import './assets/Roboto-Light.ttf';
+@import './assets/fonts/Oswald.ttf';
+@import './assets/fonts/Roboto-Light.ttf';
 
 body, p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 #links {
@@ -15,6 +16,13 @@ body, p {
   vertical-align: middle;
   justify-content: space-between;
 }
+
 #bottom-layer, #bottom-layer p {
-  margin-top: 17.5%;
+  font-size: small;
+  text-align: center;
+  margin-top: 17%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fcfcfc;
+  font-family: 'Roboto', sans-serif;
 }

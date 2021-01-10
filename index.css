@@ -1,8 +1,9 @@
 @import './theme.css';
 @import './assets/Roboto-Light.ttf';
+@import './assets/Oswald.ttf';
 
 body, p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .bfs-full {
@@ -35,6 +36,17 @@ body, p {
   font-family: 'Times New Roman', Times, serif;
   border-radius: 10%;
 }
+
+#bottom-layer, #bottom-layer p {
+  font-size: small;
+  text-align: center;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fcfcfc;
+  font-family: 'Roboto', sans-serif;
+}
+
 
 @media screen and (min-height: 1100px) {
   .bfs-full {
