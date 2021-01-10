@@ -6,9 +6,9 @@
       <link
         rel="shortcut icon"
         type="image/x-icon"
-        href="./images/bfs-logo.png"
+        href="./assets/images/bfs-logo.png"
       />
-      <meta charset="utf-8" />
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#ffa500" />
       <meta property="og:type" content="website" />
@@ -26,21 +26,66 @@
     </head>
   </head>
   <body>
-    <div id="navbar">
-      <div id="navbar-left">
-        <a href="/">Home</a>
-        <a href="https://black-frog-studios.itch.io" target="_blank">Games</a>
+    <nav>
+      <div id="navbar">
+        <div id="navbar-left">
+          <a href="/">Home</a>
+          <a href="https://black-frog-studios.itch.io" target="_blank">Games</a>
+        </div>
+        <div id="navbar-right">
+          <a href="./creations.html">Creations</a>
+          <a class="active" href="./about.html">About</a>
+        </div>
+        <img
+          id="logo"
+          src="./assets/images/bfs-logo-transparent.png"
+          alt=""
+          draggable="false"
+        />
       </div>
-      <div id="navbar-right">
-        <a href="./creations.html">Creations</a>
-        <a class="active" href="./about.html">About</a>
+    </nav>
+
+    <section class="about-container">
+      <div id="links">
+        <a
+          href="https://github.com/Black-Frog-Studios"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="./assets/images/GitHub-Logo.png"
+            alt="GitHub Organization"
+            class="github"
+          />
+        </a>
+        <a
+          href="https://discord.gg/aMD3mmu"
+          target="_blank"
+          rel="noopener"
+          type="images/png"
+        >
+          <img
+            src="./assets/images/Discord-Logo.png"
+            alt="Discord Server"
+            class="discord"
+            width="86px"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UClYs8qOEhhs8y99P6a8gQAg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="./assets/images/YouTube-Logo.png"
+            alt="YouTube Channel"
+            class="youtube"
+          />
+        </a>
       </div>
-      <img
-        id="logo"
-        src="./images/bfs-logo-transparent.png"
-        alt=""
-        draggable="false"
-      />
-    </div>
+      <div id="bottom-layer">
+        <p>Copyright © Black Frog Studios - 2021<br /> and made with &#128150 by <a href="https://github.com/ANF-Studios" target="_blank">ANF-Studios</a></p>
+      </div>
+    </section>
   </body>
 </html>

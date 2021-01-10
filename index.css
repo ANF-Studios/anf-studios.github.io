@@ -1,36 +1,44 @@
 @import './theme.css';
+@import './assets/Roboto-Light.ttf';
 
-body {
-  background: url(images/background.jpg) no-repeat;
+body, p {
+  font-family: 'Roboto', sans-serif;
 }
 
-h3,
-p {
-  color: #08080a;
+.bfs-full {
+  width: 35vw;
+  height: auto;
+  max-width: 50vh;
+  max-height: auto;
+  margin-top: 5%;
+  position: relative;
+  justify-content: center;
 }
 
 .description {
   font-size: x-large;
-  color: #ebe7e7;
+  color: #161515;
   padding: 10% 5%;
+  margin-top: -25px;
   justify-content: center;
-  mix-blend-mode: lighten;
 }
 
 .glass {
-  width: 450px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
+  width: 500px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 35px;
   text-align: center;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 125px;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   border-radius: 10%;
 }
 
-#bottom-layer {
-  font-size: small;
-  text-align: center;
-  mix-blend-mode: darken;
+@media screen and (min-height: 1100px) {
+  .bfs-full {
+    width: 75vw;
+    height: auto;
+  }
 }

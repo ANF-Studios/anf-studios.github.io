@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Home | Black Frog Studios</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="./images/bfs-logo.png"
+      href="./assets/images/bfs-logo.png"
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,44 +17,62 @@
       content="Black Frog Studios is a small video game development team founded in 2019. We have developed hits such as the Franklin franchise and Super Aleksandr Jones and the Round World."
     />
     <meta
+      name="description"
+      content="Black Frog Studios is a small video game development team founded in 2019. We have developed hits such as the Franklin franchise and Super Aleksandr Jones and the Round World."
+    />
+    <meta
       property="og:image"
       content="https://raw.githubusercontent.com/ANF-Studios/anf-studios.github.io/main/images/bfs-logo-orange.png"
     />
     <script type="text/javascript">
-      if (screen.width <= 699 && screen.width !== 0) {
+      // Check if the device is a phone.
+      if (screen.width <= 1200 && screen.width !== 0) {
         document.location = './mobile.html';
       }
     </script>
-
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-    <div id="navbar">
-      <div id="navbar-left">
-        <a class="active" href="/">Home</a>
-        <a href="https://black-frog-studios.itch.io" target="_blank">Games</a>
+    <nav>
+      <div id="navbar">
+        <div id="navbar-left">
+          <a class="active" href="/">Home</a>
+          <a
+            href="https://black-frog-studios.itch.io"
+            target="_blank"
+            rel="noopener"
+            >Games</a
+          >
+        </div>
+        <div id="navbar-right">
+          <a href="./creations.html">Creations</a>
+          <a href="./about.html">About</a>
+        </div>
+        <img
+          id="logo"
+          src="./assets/images/bfs-logo-transparent.png"
+          alt=""
+          draggable="false"
+        />
       </div>
-      <div id="navbar-right">
-        <a href="./creations.html">Creations</a>
-        <a href="./about.html">About</a>
-      </div>
-      <img
-        id="logo"
-        src="./images/bfs-logo-transparent.png"
-        alt=""
-        draggable="false"
-      />
-    </div>
+    </nav>
 
     <section>
       <div class="glass">
+        <img
+          class="bfs-full"
+          src="./assets/images/black-frog-studios.png"
+          draggable="false"
+          alt=""
+        />
         <p class="description">
           Black Frog Studios is a small video game development team founded in
-          2019. We have developed hits such as the Franklin franchise and Super
-          Aleksandr Jones and the Round World. We focus on making titles with
-          stunning stories and gameplay, as well as game assets and other media.
+          2019. We have developed hits such as the “Franklin” franchise and
+          “Super Aleksandr Jones and the Round World”. We focus on making titles
+          with stunning stories and gameplay, as well as game assets and other
+          media.
         </p>
       </div>
       <div id="bottom-layer">

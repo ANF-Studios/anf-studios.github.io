@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 body {
   margin: 0;
   font-size: 28px;
-  background-color: #fcfcfc;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #333333;
+}
+
+h3, p {
+  color: #08080a;
+}
+
+a {
+  color: #e7e7f0;
+  text-decoration-color: #dfdfdf;
 }
 
 /* #region Navbar*/
@@ -12,7 +18,7 @@ body {
   justify-content: center;
   padding: 1%;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #292929;
 }
 
 #logo {
@@ -62,6 +68,18 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 1345px) {
+  #logo {
+    display: none;
+  }
+  #navbar-right {
+    margin-left: 100px;
+  }
+  #navbar-left {
+    margin-right: 100px;
+  }
+}
+
 .content {
   padding: 32px;
 }
@@ -80,4 +98,21 @@ body {
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+#bottom-layer, #bottom-layer p {
+  font-size: small;
+  text-align: center;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fcfcfc;
+}
+
+
+@media screen and (max-width: 1345px) {
+  #bottom-layer p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

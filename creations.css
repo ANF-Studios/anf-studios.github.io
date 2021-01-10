@@ -1,1 +1,6 @@
 @import './theme.css';
+@import './assets/Roboto-Light.ttf';
+
+body, p {
+  font-family: 'Roboto', sans-serif;
+}

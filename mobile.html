@@ -5,7 +5,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="./images/bfs-logo.png"
+      href="./assets/images/bfs-logo.png"
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,12 @@
       property="og:image"
       content="https://raw.githubusercontent.com/ANF-Studios/anf-studios.github.io/main/images/bfs-logo-orange.png"
     />
+    <script type="text/javascript">
+      // Check if the device is not a phone.
+      if (screen.width >= 1200) {
+        document.location = './index.html';
+      }
+    </script>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./index.css" />
   </head>
