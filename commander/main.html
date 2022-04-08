@@ -1,0 +1,182 @@
+<html>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <head>
+        <body>
+            <p id="commander_stats">0/0-0-0-0</p>
+
+            <br>
+
+            <label for="melee">Commander melee </label>
+            <input type="number" value=0 id="melee" onkeyup="calculate()">
+            <br>
+
+            <label for="range">Commander range </label>
+            <input type="number" value=0 id="range" onkeyup="calculate()">
+            <br>
+
+            <label for="courtyard">Commander courtyard </label>
+            <input type="number" value=0 id="courtyard" onkeyup="calculate()">
+            <br>
+
+            <label for="front">Commander front </label>
+            <input type="number" value=0 id="front" onkeyup="calculate()">
+            <br>
+
+            <label for="flank">Commander flank </label>
+            <input type="number" value=0 id="flank" onkeyup="calculate()">
+            <br>
+
+            <label for="waves">Waves</label>
+            <input type="number" value=1 id="waves" onkeyup="calculate()">
+            <br>
+            <br>
+            <br>
+
+            <label for="bakery">Bakery</label>
+            <select name="bakery" id="bakery" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=10>Melee (Ordinary)</option>
+                <option value=20>Melee (Rare)</option>
+                <option value=30>Melee (Epic)</option>
+                <option value=40>Melee (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="marketplace">Marketplace</label>
+            <select name="marketplace" id="marketplace" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=30>Melee (Ordinary)</option>
+                <option value=40>Melee (Rare)</option>
+                <option value=50>Melee (Epic)</option>
+                <option value=60>Melee (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="stonemason">Stonemason</label>
+            <select name="stonemason" id="stonemason" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=10>Range (Ordinary)</option>
+                <option value=20>Range (Rare)</option>
+                <option value=30>Range (Epic)</option>
+                <option value=40>Range (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="siege">Siege Workshop</label>
+            <select name="siege" id="siege" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=30>Range (Ordinary)</option>
+                <option value=40>Range (Rare)</option>
+                <option value=50>Range (Epic)</option>
+                <option value=60>Range (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="keep">Keep</label>
+            <select name="keep" id="keep" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=15>Courtyard (Ordinary)</option>
+                <option value=30>Courtyard (Rare)</option>
+                <option value=45>Courtyard (Epic)</option>
+                <option value=60>Courtyard (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="defense">Defense Workshop</label>
+            <select name="defense" id="defense">
+                <option value=0>-</option>
+                <option value=36>Courtyard (Ordinary)</option>
+                <option value=48>Courtyard (Rare)</option>
+                <option value=60>Courtyard (Epic)</option>
+                <option value=72>Courtyard (Legendary)</option>
+            </select>
+            <br>
+    
+            <label for="hol">HoL</label>
+            <select name="hol" id="hol" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=12>Courtyard (Ordinary)</option>
+                <option value=24>Courtyard (Rare)</option>
+                <option value=36>Courtyard (Epic)</option>
+                <option value=48>Courtyard (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="encampment">Encampment</label>
+            <select name="encampment" id="encampment" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=12>Courtyard (Ordinary)</option>
+                <option value=24>Courtyard (Rare)</option>
+                <option value=36>Courtyard (Epic)</option>
+                <option value=48>Courtyard (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="hospital">Hospital</label>
+            <select name="hospital" id="hospital" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=15>Front (Ordinary)</option>
+                <option value=30>Front (Rare)</option>
+                <option value=45>Front (Epic)</option>
+                <option value=60>Front (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="sawmill">Sawmill</label>
+            <select name="sawmill" id="sawmill" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=50>Front (Ordinary, not accurate)</option>
+                <option value=60>Front (Rare, not accurate)</option>
+                <option value=70>Front (Epic)</option>
+                <option value=80>Front (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="storehouse">Storehouse</label>
+            <select name="storehouse" id="storehouse" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=15>Flank (Ordinary)</option>
+                <option value=30>Flank (Rare)</option>
+                <option value=45>Flank (Epic)</option>
+                <option value=60>Flank (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="drillground">Drillground</label>
+            <select name="drillground" id="drillground" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=50>Flank (Ordinary, not accurate)</option>
+                <option value=60>Flank (Rare, not accurate)</option>
+                <option value=70>Flank (Epic)</option>
+                <option value=80>Flank (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="estate">Estate</label>
+            <select name="estate" id="estate" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=12>Flank (Ordinary)</option>
+                <option value=24>Flank (Rare)</option>
+                <option value=36>Flank (Epic)</option>
+                <option value=48>Flank (Legendary)</option>
+            </select>
+            <br>
+
+            <label for="barracks">Barracks</label>
+            <select name="barracks" id="barracks" onchange="calculate()">
+                <option value=0>-</option>
+                <option value=12>Flank (Ordinary)</option>
+                <option value=24>Flank (Rare)</option>
+                <option value=36>Flank (Epic)</option>
+                <option value=48>Flank (Legendary)</option>
+
+                <option value=12>Courtyard (Ordinary)</option>
+                <option value=24>Courtyard (Rare)</option>
+                <option value=36>Courtyard (Epic)</option>
+                <option value=48>Courtyard (Legendary)</option>
+            </select>
+    
+        </body>
+    </head>    
+</html>

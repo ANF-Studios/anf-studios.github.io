@@ -1,0 +1,16 @@
+*
+{
+    color: whitesmoke;
+    background-color: #202124;
+}
+
+option
+{
+    text-align: center;
+}
+
+input, select
+{
+    position: absolute;
+    left: 200px;
+}
